@@ -13,8 +13,14 @@ module.exports = React.createClass({
   handleSubmit: function (ev) {
     ev.preventDefault();
     var textarea = this.refs['input'].getDOMNode();
-    this.props.addMessage(textarea.value);
+    var val = textarea.value;
+
+    if(val){
+      this.props.submit(val);
+    }
+
     textarea.value = "";
+    textarea.focus();
   },
   focus: function () {
     this.refs['input'].getDOMNode().focus();

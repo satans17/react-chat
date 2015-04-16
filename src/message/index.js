@@ -14,11 +14,11 @@ module.exports = React.createClass({
     var message = this.props.message;
 
     return (
-      <div className="mod-chat-item right">
+      <div className="message mod-chat-item right">
         <div className="user">
           <div className="nick">{message.nick}</div>
           <div className="avatar">
-            <img src="{message.avatar}" alt="{message.nick}"/>
+            <img src={message.avatar} alt={message.nick}/>
           </div>
         </div>
         <div className="chat">

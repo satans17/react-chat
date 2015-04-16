@@ -16,12 +16,16 @@ module.exports = React.createClass({
   addMessage: function (message) {
     this.setState({items: this.state.items.concat([message])});
   },
+  componentDidUpdate: function(){
+    var msg = this.refs['messageList'].getDOMNode().querySelector("div.message:last-child")
+    this.props.insert(msg);
+  },
   render: function () {
     var messages = this.state.items.map(function (item) {
       return <Message message={item}/>
     });
     return (
-      <div>
+      <div ref="messageList">
         {messages}
       </div>
     )

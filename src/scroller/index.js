@@ -6,8 +6,10 @@ var IScroll = require('iscroll');
 
 
 module.exports = React.createClass({
-  scrollToTop: function () {
-    this.scroller.scrollTo(0, -100, 1000, IScroll.utils.ease.elastic);
+  refresh: function (dom) {
+    var scroller = this.scroller;
+    scroller.refresh();
+    scroller.scrollToElement(dom, 300,0,0, IScroll.utils.ease.elastic);
   },
   render: function () {
     return (<div ref="wrapper" className="mod-page-body">

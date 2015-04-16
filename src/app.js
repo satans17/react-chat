@@ -9,25 +9,28 @@ require('./app.css');
 
 var App = React.createClass({
 
-  addMessage: function(message){
-    this.refs['messageList'].addMessage({
-      style:"",
+  submit: function(message){
+    this.refs['list'].addMessage({
+      style:"right",
+      avatar:"http://wwc.taobaocdn.com/avatar/getAvatar.do?userNick=satans17&width=80&height=80&type=sns",
       nick:"游客",
-      content:"hehehe",
+      content:message,
       time:new Date()
-      
-    })
+    });
+  },
+  sync: function(dom){
+    this.refs['scroller'].refresh(dom);
   },
 
   render: function () {
 
     return (
       <div>
-        <Header/>
+        <Header title="React Chat"/>
         <Scroller ref="scroller">
-          <List ref="messageList"></List>
+          <List ref="list" insert={this.sync}></List>
         </Scroller>
-        <Form addMessage={this.addMessage}></Form>
+        <Form submit={this.submit}></Form>
       </div>
     )
 
