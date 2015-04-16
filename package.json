@@ -1,0 +1,37 @@
+{
+  "name": "learning-react",
+  "description": "learning-react",
+  "version": "0.0.1",
+  "author": {
+    "name": "常胤",
+    "email": "satans17@gmail.com"
+  },
+  "dependencies": {
+    "css-loader": "~0.10.1",
+    "style-loader": "~0.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:crm/ocs-sdk.git"
+  },
+  "bin": {},
+  "scripts": {
+    "start": "node --harmony server",
+    "lint": "gulp lint",
+    "build": "rm -rf build && webpack -p"
+  },
+  "devDependencies": {
+    "webpack": "~1.7.3",
+    "koa": "^0.18.1",
+    "koa-router": "^4.2.0",
+    "koa-serve-index": "^1.0.1",
+    "koa-static": "^1.4.9",
+    "koa-webpack-dev-middleware": "^1.0.0",
+    "object.assign": "^1.0.3",
+    "jsx-loader": "^0.12.2",
+    "babel-loader": "~4.3.0",
+    "style-loader":"*",
+    "react": "^0.13.0",
+    "iscroll": "~5.1.3"
+  }
+}

@@ -1,0 +1,48 @@
+
+.mod-page-header, .mod-page-body, .mod-page-footer {
+    position: absolute;
+    left:0;
+    width:100%;
+}
+
+.mod-page-header {
+    z-index: 2;
+    top: 0;
+    height: 2.25rem;
+    background: #CD235C;
+}
+
+.mod-page-body {
+    z-index: 1;
+    top: 2.25rem;
+    bottom: 2.25rem;
+}
+
+
+.mod-page-footer {
+    z-index: 2;
+    bottom: 0rem;
+    background: #fff;
+}
+
+.mod-page-scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}

@@ -1,0 +1,57 @@
+.mod-input-form{
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flexbox;
+    display: flexbox;
+    display: -webkit-flex;
+    border-top: 0.25rem solid #ccc;
+    height:2rem;
+}
+.mod-input-form .fields.textarea {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.mod-input-form .fields.textarea textarea{
+    width:100%;
+    overflow-y:visible;
+    border-width: 0px;
+    margin:0;
+    resize: none;
+    padding:0.25rem;
+    box-sizing: border-box;
+}
+
+.mod-input-form .fields.plugins, .mod-input-form .fields.submit {
+    width:2.5rem;
+    text-align: center;
+}
+
+
+
+.mod-input-form .btn {
+    border-width:0px;
+    width:2rem;
+    height:2rem;
+    line-height: 2rem;
+    border-radius: 2rem;
+    padding:0;
+    margin:0;
+}
+
+
+
+
+
+
+
+
+.mod-input-plugins{
+    display: none;
+    margin-top:5px;
+    height:10rem;
+    border-top: 1px solid #ccc;
+    background-color: #efefef;
+}

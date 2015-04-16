@@ -1,0 +1,149 @@
+
+.mod-page-content{
+    padding:0 0.5rem 0.5rem;
+}
+
+
+/* Modules:= 聊天记录布局 {{{ */
+.mod-chat-item {
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flexbox;
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top:1rem;
+}
+
+.mod-chat-item .user {
+    display: block;
+}
+
+
+.mod-chat-item .user .nick{
+    display: none;
+}
+
+.mod-chat-item .user .avatar {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.mod-chat-item .user .avatar img {
+    display: block;
+    width: 44px;
+}
+
+.mod-chat-item .chat {
+    position: relative;
+}
+
+.mod-chat-item .chat .body {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mod-chat-item .chat .body .content{
+    padding: 0.6rem 0.5rem;
+    font-size:0.6rem;
+    line-height: 1.5;
+}
+
+
+.mod-chat-item .chat .time {
+    display: none;
+}
+
+.mod-chat-item .chat .arrow {
+    position: absolute;
+    top: 12px;
+    display: block;
+    z-index: 1;
+    width: 14px;
+    height: 17px;
+}
+
+
+
+/*左对齐*/
+.mod-chat-item.left .chat {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-left: 15px;
+}
+
+.mod-chat-item.left .chat .body {
+    float: left;
+    min-width: 60px;
+    background-color: #dddddd;
+    /*  -webkit-box-shadow: 0 2px 3px rgba(8, 1, 3, 0.1);
+     box-shadow: 0 2px 3px rgba(8, 1, 3, 0.1); */
+    /* border-color: #e6e5e5; */
+    border:none;
+}
+
+.mod-chat-item.left .arrow {
+    left: -8px;
+    background: url(http://gtms04.alicdn.com/tps/i4/T1b4sNFLNbXXXCGaHb-8-17.png) 0 0 no-repeat;
+}
+
+/*右对齐*/
+.mod-chat-item.right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    box-orient: horizontal;
+    box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin-left: 10%;
+}
+
+.mod-chat-item.right .chat {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin-right: 18px;
+}
+
+.mod-chat-item.right .chat .body {
+    float: right;
+    min-width: 90px;
+    color:#fff;
+    background-color: #12a5f4;
+    border:none;
+}
+
+.mod-chat-item.right .chat .body .content {
+    padding: 10px 10px 10px 10px;
+}
+
+
+.mod-chat-item.right  .arrow {
+    right: -13px;
+    background: url(http://gtms01.alicdn.com/tps/i1/T1CscMFQlbXXXCGaHb-8-17.png) 0 0 no-repeat;
+}
+
+/* }}} */
+
+
+
+
+
+/* Modules:= 聊天记录布局 {{{ */
+.mod-system-message {
+    color: #ccc;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+}
+
+/* }}} */
