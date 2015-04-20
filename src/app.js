@@ -33,7 +33,6 @@ var App = React.createClass({
         <Form submit={this.submit}></Form>
       </div>
     )
-
   }
 })
 

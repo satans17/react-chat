@@ -6,6 +6,7 @@
  */
 
 var React = require('react');
+var Plugins = require('../plugins/')
 
 require('./style.css');
 
@@ -22,6 +23,10 @@ module.exports = React.createClass({
     textarea.value = "";
     textarea.focus();
   },
+  handlePlugin: function (ev) {
+    ev.preventDefault();
+    this.refs['plugins'].toggle();
+  },
   focus: function () {
     this.refs['input'].getDOMNode().focus();
   },
@@ -35,13 +40,13 @@ module.exports = React.createClass({
             <textarea ref="input" className="textarea"></textarea>
           </div>
           <div className="fields plugins">
-            <button className=" btn">Pulgin</button>
+            <button className="btn" onClick={this.handlePlugin}>Pulgin</button>
           </div>
           <div className="fields submit">
             <button className="btn" onClick={this.handleSubmit}>Send</button>
           </div>
         </div>
-        <div className="mod-input-plugins"></div>
+        <Plugins ref="plugins" display="0" />
       </div>
     )
   }
