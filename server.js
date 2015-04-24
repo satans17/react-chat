@@ -23,7 +23,7 @@ app.get('/interface', function *(next) {
   var tpl = callback ? callback + "(%s)" : "%s";
   var data = {
     status: 1,
-    message: "请求错误",
+    message: "",
     data: {}
   };
   this.type = 'text/javascript';

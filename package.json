@@ -21,6 +21,8 @@
     "build": "rm -rf build && webpack -p"
   },
   "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-webpack":"*",
     "webpack": "~1.7.3",
     "koa": "^0.18.1",
     "koa-router": "^4.2.0",
@@ -32,6 +34,7 @@
     "babel-loader": "~4.3.0",
     "style-loader":"*",
     "react": "^0.13.0",
-    "iscroll": "~5.1.3"
+    "iscroll": "~5.1.3",
+    "extract-text-webpack-plugin":"~0.6.0"
   }
 }
